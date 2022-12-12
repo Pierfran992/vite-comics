@@ -113,6 +113,17 @@ header {
 
             a {
                 text-decoration: none;
+                font-weight: 500;
+                height: 100px;
+                line-height: 100px;
+                display: inline-block;
+
+                &.active,
+                &:hover {
+                    color: #0282f9;
+                    border-bottom: solid 3px #0282f9;
+                }
+
             }
         }
     }
