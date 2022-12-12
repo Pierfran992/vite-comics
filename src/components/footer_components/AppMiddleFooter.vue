@@ -6,7 +6,7 @@ export default {
             menu: [
                 {
                     title: "DC COMICS",
-                    link: [
+                    links: [
                         {
                             url: "#",
                             text: "Characters"
@@ -39,7 +39,7 @@ export default {
                 },
                 {
                     title: "SHOP",
-                    link: [
+                    links: [
                         {
                             url: "#",
                             text: "Shop DC"
@@ -52,7 +52,7 @@ export default {
                 },
                 {
                     title: "DC",
-                    link: [
+                    links: [
                         {
                             url: "#",
                             text: "Terms Of Use"
@@ -101,7 +101,7 @@ export default {
                 },
                 {
                     title: "SITES",
-                    link: [
+                    links: [
                         {
                             url: "#",
                             text: "DC"
@@ -136,12 +136,12 @@ export default {
         <div class="container">
             <!-- slot che conterrà i vari menu del footer -->
             <div class="container_menu">
-                <div class="slot_menu">
-                    <h4>DC COMICS</h4>
+                <div class="slot_menu" v-for="(elem, index) in menu" :key="index">
+                    <h4>{{ elem.title }}</h4>
 
                     <ul>
-                        <li>
-                            <a href="#">Characters</a>
+                        <li v-for="obj in elem.links">
+                            <a :href="obj.url">{{ obj.text }}</a>
                         </li>
                     </ul>
                 </div>
@@ -175,7 +175,7 @@ section {
     height: 350px;
     padding: 10px;
     @include column();
-    gap: 20px;
+    gap: 40px;
 
     h4 {
         margin-bottom: 10px;
