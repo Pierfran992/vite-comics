@@ -113,6 +113,7 @@ header {
 
             a {
                 text-decoration: none;
+                font-size: 13px;
                 font-weight: 500;
                 height: 100px;
                 line-height: 100px;
