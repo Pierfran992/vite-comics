@@ -11,3 +11,9 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin column() {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

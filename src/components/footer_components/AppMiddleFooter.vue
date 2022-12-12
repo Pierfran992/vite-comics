@@ -10,7 +10,15 @@ export default {
         <div class="container">
             <!-- slot che conterrà i vari menu del footer -->
             <div class="container_menu">
+                <div class="slot_menu">
+                    <h4>DC COMICS</h4>
 
+                    <ul>
+                        <li>
+                            <a href="#">Characters</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <!-- slot che conterrà il logo del footer -->
@@ -35,5 +43,26 @@ section {
 .container {
     height: 100%;
     @include between();
+}
+
+.container_menu {
+    height: 350px;
+    padding: 10px;
+    @include column();
+    gap: 20px;
+
+    h4 {
+        margin-bottom: 10px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: #797979;
+        text-decoration: none;
+        font-size: 12px;
+    }
 }
 </style>
