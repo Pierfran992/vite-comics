@@ -85,8 +85,11 @@ section {
         @include center();
 
         div {
+            width: 60px;
             height: 60px;
             margin-right: 10px;
+            display: flex;
+            align-items: center;
         }
     }
 }
