@@ -5,8 +5,8 @@
     align-items: center;
 }
 
-@mixin evenly() {
+@mixin between() {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
