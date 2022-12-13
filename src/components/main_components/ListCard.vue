@@ -91,6 +91,11 @@ export default {
     <div class="container">
         <!-- richiamo il componente per generare le card -->
         <CardGenerator v-for="(comic, index) in comics" :key="index" :info="comic" />
+
+        <!-- creo il bottone per caricare più elementi -->
+        <div class="bottom_more">
+            LOAD MORE
+        </div>
     </div>
 </template>
 
@@ -103,5 +108,15 @@ export default {
     align-items: stretch;
     flex-wrap: wrap;
     gap: 50px 0;
+}
+
+.bottom_more {
+    color: $primaryColor;
+    background-color: $secondaryColor;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 60px;
+    cursor: pointer;
 }
 </style>
