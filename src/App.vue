@@ -1,11 +1,13 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import Jumbo from './components/Jumbo.vue';
 import AppFooter from './components/AppFooter.vue';
 
 export default {
   name: "App",
   components: {
     AppHeader,
+    Jumbo,
     AppFooter,
   }
 }
@@ -14,9 +16,7 @@ export default {
 
 <template>
   <AppHeader />
-  <main>
-    <h1>--> Content goes hear &lt;--</h1>
-  </main>
+  <Jumbo />
   <AppFooter />
 </template>
 
