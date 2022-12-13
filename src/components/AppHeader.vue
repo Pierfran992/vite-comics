@@ -121,8 +121,8 @@ header {
 
                 &.active,
                 &:hover {
-                    color: #0282f9;
-                    border-bottom: solid 3px #0282f9;
+                    color: $secondaryColor;
+                    border-bottom: solid 3px $secondaryColor;
                 }
 
             }

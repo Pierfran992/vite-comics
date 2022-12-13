@@ -63,7 +63,7 @@ section {
         color: $primaryColor;
         width: fit-content;
         padding: 15px;
-        border: solid 2px #0282f9;
+        border: solid 2px $secondaryColor;
     }
 
     .social {
@@ -71,7 +71,7 @@ section {
         gap: 20px;
 
         h4 {
-            color: #0282f9;
+            color: $secondaryColor;
         }
 
         .slot_link {

@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <!-- creo la section che prende tutta la lunghezza della pagina con colozione #0282f9  -->
+    <!-- creo la section che prende tutta la lunghezza della pagina con colozione $secondaryColor  -->
     <section>
         <!-- creo il container in cui inserire i vari link -->
         <div class="container">
@@ -64,7 +64,7 @@ export default {
 @use '../../styles/partials/mixins' as *;
 
 section {
-    background-color: #0282f9;
+    background-color: $secondaryColor;
     color: $primaryColor;
     height: 100px;
 }
